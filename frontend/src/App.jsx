@@ -845,7 +845,7 @@ const App = () => {
         <h1>MongoDB CRUD Relationships Demo</h1>
         <p>
           Explore one-to-many (Departments -> Employees) and many-to-many (Students
-          <-> Courses) with seeded data and clean CRUD flows.
+          {'<->'} Courses) with seeded data and clean CRUD flows.
         </p>
       </header>
 
