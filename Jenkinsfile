@@ -51,5 +51,18 @@ pipeline {
         }
       }
     }
+    stage('Docker Compose Up') {
+      steps {
+        script {
+          if (isUnix()) {
+            sh 'docker compose up -d --build'
+            sh 'docker compose ps'
+          } else {
+            bat 'docker compose up -d --build'
+            bat 'docker compose ps'
+          }
+        }
+      }
+    }
   }
 }
