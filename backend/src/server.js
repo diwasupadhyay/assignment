@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 const connectDb = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 const { seedIfNeeded } = require('./seed/seed');

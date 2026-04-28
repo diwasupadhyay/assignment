@@ -740,7 +740,7 @@ const App = () => {
     <Panel title="Relationship Viewer" tag="Explore Links">
       <div className="relationships">
         <div className="rel-card">
-          <h3>Department -> Employees</h3>
+          <h3>Department to Employees</h3>
           <select
             value={relDepartmentId}
             onChange={(event) => setRelDepartmentId(event.target.value)}
@@ -766,7 +766,7 @@ const App = () => {
         </div>
 
         <div className="rel-card">
-          <h3>Student -> Courses</h3>
+          <h3>Student to Courses</h3>
           <select
             value={relStudentId}
             onChange={(event) => setRelStudentId(event.target.value)}
@@ -792,7 +792,7 @@ const App = () => {
         </div>
 
         <div className="rel-card">
-          <h3>Course -> Students</h3>
+          <h3>Course to Students</h3>
           <select
             value={relCourseId}
             onChange={(event) => setRelCourseId(event.target.value)}
@@ -844,8 +844,8 @@ const App = () => {
       <header className="header">
         <h1>MongoDB CRUD Relationships Demo</h1>
         <p>
-          Explore one-to-many (Departments -> Employees) and many-to-many (Students
-          {'<->'} Courses) with seeded data and clean CRUD flows.
+          Explore one-to-many (Departments to Employees) and many-to-many (Students
+          and Courses) with seeded data and clean CRUD flows.
         </p>
       </header>
 
